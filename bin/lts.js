@@ -66,7 +66,7 @@ const cliArgs = {
     default: false,
   },
   m: {
-    description: "Exclude Main (unstable) in graph",
+    description: "Exclude Main (unsupported) in graph",
     alias: "excludeMain",
     type: "boolean",
     require: false,
