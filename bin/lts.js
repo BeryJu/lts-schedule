@@ -1,86 +1,86 @@
 #!/usr/bin/env node
-'use strict';
-const Path = require('path');
-const Bossy = require('bossy');
-const Lib = require('../lib');
+"use strict";
+const Path = require("path");
+const Bossy = require("bossy");
+const Lib = require("../lib");
 const now = new Date();
 const oneYearFromNow = new Date();
 
 oneYearFromNow.setFullYear(now.getFullYear() + 1);
 
 const cliArgs = {
-  'd': {
-    description: 'Input LTS JSON file',
-    alias: 'data',
-    type: 'string',
+  d: {
+    description: "Input LTS JSON file",
+    alias: "data",
+    type: "string",
     require: false,
     multiple: false,
-    default: Path.resolve(__dirname, '..', 'lts.json')
+    default: Path.resolve(__dirname, "..", "lts.json"),
   },
-  's': {
-    description: 'Query start date',
-    alias: 'start',
-    type: 'string',
+  s: {
+    description: "Query start date",
+    alias: "start",
+    type: "string",
     require: false,
     multiple: false,
-    default: now
+    default: now,
   },
-  'e': {
-    description: 'Query end date',
-    alias: 'end',
-    type: 'string',
+  e: {
+    description: "Query end date",
+    alias: "end",
+    type: "string",
     require: false,
     multiple: false,
-    default: oneYearFromNow
+    default: oneYearFromNow,
   },
-  'h': {
-    description: 'HTML output file',
-    alias: 'html',
-    type: 'string',
+  h: {
+    description: "HTML output file",
+    alias: "html",
+    type: "string",
     require: false,
     multiple: false,
-    default: null
+    default: null,
   },
-  'g': {
-    description: 'SVG output file',
-    alias: 'svg',
-    type: 'string',
+  g: {
+    description: "SVG output file",
+    alias: "svg",
+    type: "string",
     require: false,
     multiple: false,
-    default: null
+    default: null,
   },
-  'p': {
-    description: 'PNG output file',
-    alias: 'png',
-    type: 'string',
+  p: {
+    description: "PNG output file",
+    alias: "png",
+    type: "string",
     require: false,
     multiple: false,
-    default: null
+    default: null,
   },
-  'a': {
-    description: 'Animate bars on load',
-    alias: 'animate',
-    type: 'boolean',
+  a: {
+    description: "Animate bars on load",
+    alias: "animate",
+    type: "boolean",
     require: false,
     multiple: false,
-    default: false
+    default: false,
   },
-  'm': {
-    description: 'Exclude Main (unstable) in graph',
-    alias: 'excludeMain',
-    type: 'boolean',
+  m: {
+    description: "Exclude Main (unstable) in graph",
+    alias: "excludeMain",
+    type: "boolean",
     require: false,
     multiple: false,
-    default: false
+    default: false,
   },
-  'n': {
-    description: 'Project Name',
-    alias: 'projectName',
-    type: 'string',
+  n: {
+    description: "Project Name",
+    alias: "projectName",
+    type: "string",
     require: false,
     multiple: false,
-    default: 'Node.js'
-  }
+    default: "Node.js",
+  },
 };
 
 const args = Bossy.parse(cliArgs, { argv: process.argv });
@@ -99,7 +99,7 @@ const options = {
   png: args.png ? Path.resolve(args.png) : null,
   animate: args.animate,
   excludeMain: args.excludeMain,
-  projectName: args.projectName
+  projectName: args.projectName,
 };
 
 Lib.create(options);
