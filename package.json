@@ -1,15 +1,15 @@
 {
-  "name": "lts",
+  "name": "@beryju/lts",
   "version": "2.0.0",
   "description": "Generate the Node.js LTS schedule",
   "main": "lib/index.js",
-  "homepage": "https://github.com/nodejs/lts-schedule",
+  "homepage": "https://github.com/BeryJu/lts-schedule",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodejs/lts-schedule.git"
+    "url": "git+https://github.com/BeryJu/lts-schedule.git"
   },
   "bugs": {
-    "url": "https://github.com/nodejs/lts-schedule/issues"
+    "url": "https://github.com/BeryJu/lts-schedule/issues"
   },
   "license": "MIT",
   "scripts": {
