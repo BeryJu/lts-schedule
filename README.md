@@ -2,7 +2,6 @@
 
 [![Current Version](https://img.shields.io/npm/v/lts.svg)](https://www.npmjs.org/package/lts)
 [![Build Status via Travis CI](https://travis-ci.org/nodejs/lts-schedule.svg?branch=main)](https://travis-ci.org/nodejs/lts-schedule)
-[![belly-button-style](https://cdn.rawgit.com/cjihrig/belly-button/main/badge.svg)](https://github.com/cjihrig/belly-button)
 
 A command line utility that generates the Node.js LTS schedule as a graph. Accepts JSON LTS data and a date range as inputs. Writes the LTS graph as HTML, SVG, and PNG files.
 

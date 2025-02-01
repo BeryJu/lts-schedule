@@ -12,9 +12,6 @@
     "url": "https://github.com/BeryJu/lts-schedule/issues"
   },
   "license": "MIT",
-  "scripts": {
-    "test": "belly-button -f"
-  },
   "bin": {
     "lts": "bin/lts.js"
   },
@@ -26,9 +23,6 @@
     "d3": "4.7.4",
     "d3-node": "1.0.1",
     "svg2png": "4.1.1"
-  },
-  "devDependencies": {
-    "belly-button": "3.1.0"
   },
   "keywords": [
     "lts",
